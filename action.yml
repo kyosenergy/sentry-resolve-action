@@ -1,23 +1,18 @@
-name: The name of your action here
-description: Provide a description here
-author: Your name or organization here
+name: Resolve Sentry Issues
+description: Resolves linked Sentry issues opened by Github
+author: KYOS Energy Analytics
 
-# Add your action's branding here. This will appear on the GitHub Marketplace.
 branding:
-  icon: heart
-  color: red
+  color: 'green'
+  icon: 'check'
 
-# Define your inputs here.
 inputs:
-  milliseconds:
-    description: Your input description here
+  token:
+    description: Sentry Auth Token
     required: true
-    default: '1000'
-
-# Define your outputs here.
-outputs:
-  time:
-    description: Your output description here
+  org:
+    description: Name of the Sentry Organization
+    required: true
 
 runs:
   using: node20
